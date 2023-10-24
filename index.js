@@ -1,5 +1,5 @@
 const express = require('express');
-const router = require('./src/Router/BaseRouter');
+// const router = require('./src/Router/BaseRouter');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -20,7 +20,7 @@ app.get('/about', (req, res)=>{
     res.send("About route");
 });
 
-app.use('/api/v1',router)
+// app.use('/api/v1',router)
 
   
 app.listen(PORT, (error) =>{
